@@ -1,0 +1,8 @@
+{
+    "port": 80,
+    "bind": "",
+    "backlog": 100,
+    "status_codes_content": {
+        "418": "<html><body><p>I'm a teapot!</p></body></html>"
+    }
+}
