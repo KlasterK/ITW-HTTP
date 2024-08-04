@@ -2,7 +2,7 @@
 # You can use '()' wrapped symbol groups via '%x', where 'x' - index of a group (starting with 1). '%0' means all the match string. 
 # If 'redirect' parameter not specified then the same page will be sended (except - 3xx response codes). Use 'rcp' to send default response code page.
 # You can set page content ('redirect' parameter) just here, in '.kaccess'. Wrap your result in double quotes.
-# You can prefix content by 'b64' if it's Base64-encoded bytes, or 'x' for hexademical encode.
+# You can prefix content by 'b64' if it's Base64-encoded bytes, or 'x' for hexademical (Base16) encode.
 # File's encoding will be used if there's no prefix. You can escape symbols like you do it in Python.
 #
 # Template
@@ -13,3 +13,4 @@
 # re/api/(.+) 308 http://example.com/api/{}
 # /index.html 200 "<html><body><p>Index</p></body></html>"
 # /favicon.ico 200 b64"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJ..."
+/ 200 /index.html
