@@ -6,5 +6,5 @@
         "418": "<html><body><p>I'm a teapot!</p></body></html>"
     },
     "log_path": "server.log",
-    ""
+    "directories_view": true
 }

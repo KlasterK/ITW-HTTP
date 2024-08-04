@@ -85,3 +85,102 @@
 [04.08.2024 19:52:51] First line: [b'GET', b'/', b'HTTP/1.1']
 [04.08.2024 19:52:51] New connection from 127.0.0.1:40955
 [04.08.2024 19:52:51] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 22:56:51] HTTP Server has started
+[04.08.2024 23:04:35] HTTP Server has started
+[04.08.2024 23:04:42] New connection from 127.0.0.1:30686
+[04.08.2024 23:04:42] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:04:42] New connection from 127.0.0.1:30687
+[04.08.2024 23:04:42] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:04:55] New connection from 127.0.0.1:30694
+[04.08.2024 23:04:55] New connection from 127.0.0.1:30695
+[04.08.2024 23:04:55] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:05:20] HTTP Server has started
+[04.08.2024 23:05:23] New connection from 127.0.0.1:30737
+[04.08.2024 23:05:23] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:05:23] New connection from 127.0.0.1:30738
+[04.08.2024 23:05:49] HTTP Server has started
+[04.08.2024 23:05:50] New connection from 127.0.0.1:30770
+[04.08.2024 23:05:50] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:05:50] New connection from 127.0.0.1:30771
+[04.08.2024 23:05:50] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:07:03] HTTP Server has started
+[04.08.2024 23:07:05] New connection from 127.0.0.1:46732
+[04.08.2024 23:07:05] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:07:05] New connection from 127.0.0.1:46733
+[04.08.2024 23:07:05] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:07:58] HTTP Server has started
+[04.08.2024 23:07:59] New connection from 127.0.0.1:46777
+[04.08.2024 23:07:59] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:07:59] New connection from 127.0.0.1:46778
+[04.08.2024 23:08:00] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:08:00] New connection from 127.0.0.1:46782
+[04.08.2024 23:08:00] New connection from 127.0.0.1:46783
+[04.08.2024 23:08:00] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:08:00] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:08:00] New connection from 127.0.0.1:46784
+[04.08.2024 23:08:00] New connection from 127.0.0.1:46785
+[04.08.2024 23:08:00] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:08:00] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:08:01] New connection from 127.0.0.1:46786
+[04.08.2024 23:08:01] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:08:01] New connection from 127.0.0.1:46787
+[04.08.2024 23:08:01] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:08:01] New connection from 127.0.0.1:46788
+[04.08.2024 23:08:01] New connection from 127.0.0.1:46789
+[04.08.2024 23:08:01] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:08:08] New connection from 127.0.0.1:46796
+[04.08.2024 23:08:08] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:08:10] New connection from 127.0.0.1:46798
+[04.08.2024 23:08:10] First line: [b'GET', b'/index.html', b'HTTP/1.1']
+[04.08.2024 23:12:06] HTTP Server has started
+[04.08.2024 23:13:40] HTTP Server has started
+[04.08.2024 23:13:48] New connection from 127.0.0.1:7506
+[04.08.2024 23:13:48] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:13:48] New connection from 127.0.0.1:7507
+[04.08.2024 23:13:48] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:13:50] New connection from 127.0.0.1:7509
+[04.08.2024 23:13:50] New connection from 127.0.0.1:7510
+[04.08.2024 23:13:50] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:13:50] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:13:50] New connection from 127.0.0.1:7511
+[04.08.2024 23:13:50] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:13:50] New connection from 127.0.0.1:7512
+[04.08.2024 23:13:50] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:14:09] New connection from 127.0.0.1:7530
+[04.08.2024 23:14:09] New connection from 127.0.0.1:7531
+[04.08.2024 23:14:09] First line: [b'GET', b'/.kaccess', b'HTTP/1.1']
+[04.08.2024 23:23:00] HTTP Server has started
+[04.08.2024 23:23:13] HTTP Server has started
+[04.08.2024 23:23:14] New connection from 127.0.0.1:5126
+[04.08.2024 23:23:14] First line: [b'GET', b'/testdir', b'HTTP/1.1']
+[04.08.2024 23:23:14] New connection from 127.0.0.1:5127
+[04.08.2024 23:23:49] HTTP Server has started
+[04.08.2024 23:23:50] New connection from 127.0.0.1:5166
+[04.08.2024 23:23:50] First line: [b'GET', b'/testdir', b'HTTP/1.1']
+[04.08.2024 23:23:50] New connection from 127.0.0.1:5167
+[04.08.2024 23:23:50] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:24:00] New connection from 127.0.0.1:5182
+[04.08.2024 23:24:00] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:24:00] New connection from 127.0.0.1:5183
+[04.08.2024 23:24:45] HTTP Server has started
+[04.08.2024 23:24:47] New connection from 127.0.0.1:5212
+[04.08.2024 23:24:47] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:24:47] New connection from 127.0.0.1:5213
+[04.08.2024 23:24:47] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:25:46] HTTP Server has started
+[04.08.2024 23:25:48] New connection from 127.0.0.1:5272
+[04.08.2024 23:25:48] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:25:48] New connection from 127.0.0.1:5273
+[04.08.2024 23:25:48] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:25:48] New connection from 127.0.0.1:5276
+[04.08.2024 23:25:48] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:25:48] New connection from 127.0.0.1:5277
+[04.08.2024 23:25:49] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:25:49] New connection from 127.0.0.1:5278
+[04.08.2024 23:25:49] New connection from 127.0.0.1:5279
+[04.08.2024 23:25:49] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:25:49] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']
+[04.08.2024 23:25:49] New connection from 127.0.0.1:5280
+[04.08.2024 23:25:49] First line: [b'GET', b'/', b'HTTP/1.1']
+[04.08.2024 23:25:49] New connection from 127.0.0.1:5281
+[04.08.2024 23:25:49] First line: [b'GET', b'/favicon.ico', b'HTTP/1.1']

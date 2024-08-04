@@ -43,6 +43,7 @@ class HTTPServer:
 
         self.sc_redirects = config.get('status_codes_content', {})
         self.timestamp_format = config.get('timestamp_format', '[%d.%m.%Y %H:%M:%S]')
+        self.dir_view = config.get('directories_view', True)
         self.server = asyncio.start_server(self.serve, port=80)
 
         if log_path := config.get('log_path', ''):
@@ -52,7 +53,6 @@ class HTTPServer:
         
     async def serve(self, reader: asyncio.streams.StreamReader, writer: asyncio.streams.StreamWriter):
         addr = writer.get_extra_info('peername', ('UNKNOWN', 0))
-        self.log('New connection from ' + addr[0] + ':' + str(addr[1]))
 
         line = await reader.readuntil(b'\r\n')
         line = line.split()
@@ -62,7 +62,6 @@ class HTTPServer:
             return self.status_close(writer, 501)
         except IndexError:
             return self.status_close(writer, 400)
-        self.log('First line: ' + str(line))
         
         url = line[1].split(b'?', 1)
         path = b'data' + url[0]
@@ -80,12 +79,24 @@ class HTTPServer:
             return writer.close()
         elif kacc[1] == EKaccRet.URL:
             path = b'data' + kacc[0]
-        if os.path.exists(path) and os.path.isfile(path):
-            writer.write(b'HTTP/1.1 ' + (kacc[0] if kacc[1] == EKaccRet.STATUS_CONTINUE else b'200 OK'))
-            if method == EReqMeth.GET:
-                writer.write(b'\r\n\r\n')
-                async with aiofiles.open(b'data' + kacc[0] if kacc[1] == EKaccRet.URL else path, 'rb') as file:
-                    writer.write(await file.read())
+        if os.path.exists(path):
+            if os.path.isfile(path):
+                writer.write(b'HTTP/1.1 ' + (kacc[0] if kacc[1] == EKaccRet.STATUS_CONTINUE else b'200 OK'))
+                if method == EReqMeth.GET:
+                    writer.write(b'\r\n\r\n')
+                    async with aiofiles.open(b'data' + kacc[0] if kacc[1] == EKaccRet.URL else path, 'rb') as file:
+                        writer.write(await file.read())
+            elif os.path.isdir(path) and self.dir_view:
+                writer.write(b'HTTP/1.1 200 OK\r\n\r\n<html><head><title>View of ' + url[0] + b'</title><style>html{background-color:whitesmoke;}'
+                             b'body{margin:1em auto;padding:1em;background-color:white;max-width:800px;}h1,p#end{text-align:center;}</style></head>'
+                             b'<body><h1>View of ' + url[0] + b'</h1><hr>')
+                for file_name in os.listdir(path):
+                    if file_name[0] == 46: # . - 46
+                        continue
+                    writer.write(b'<p>' + b'DIR&ensp;' if os.path.isdir(os.path.join(path, file_name)) else b'FILE')
+                    writer.write(b' <a href="' + os.path.join(url[0], file_name) + b'">' + file_name)
+                    writer.write(b'</a></p>')
+                writer.write(b'<hr><p id="end">You were served by HTTP Server by KlasterK</p></body></html>')
             writer.close()
         else:
             self.status_close(writer, 404)
@@ -145,7 +156,6 @@ class HTTPServer:
             with open(path, 'rb') as file:
                 for line_index, line in enumerate(file.readlines(), 1):
                     line = line.split(b'#', 1)[0].strip().split(None, 3)
-                    print(line_index, url, line)
                     if len(line) < 2:
                         continue
                     elif line[0][:2] == b're':
@@ -197,7 +207,6 @@ class HTTPServer:
                             return (b'HTTP/1.1 ' + status_desc + b'\r\nLocation: ' + address, EKaccRet.CONTENT)
                         else:
                             return (address, EKaccRet.CONTENT if is_content else EKaccRet.URL)
-            return (None, EKaccRet.CONTINUE)
         return (None, EKaccRet.CONTINUE)
 
 def run(config):

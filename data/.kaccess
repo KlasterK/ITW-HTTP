@@ -13,4 +13,4 @@
 # re/api/(.+) 308 http://example.com/api/{}
 # /index.html 200 "<html><body><p>Index</p></body></html>"
 # /favicon.ico 200 b64"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJ..."
-/ 200 /index.html
+#/ 200 /index.html
